@@ -159,10 +159,10 @@
 # del a(2)
 # print(a)
 
-t1=(1,"two",3.0,"four",[5.0,32,54],"six")
-t1[4] [2] = 654
-print(t1)
+# t1=(1,"two",3.0,"four",[5.0,32,54],"six")
+# t1[4] [2] = 654
+# print(t1)
 
-# access the depth value 2 and print it
-data = ((1,2),(3,4),(5,(1,2)))
-print(data [2][1][1])
+# # access the depth value 2 and print it
+# data = ((1,2),(3,4),(5,(1,2)))
+# print(data [2][1][1])
