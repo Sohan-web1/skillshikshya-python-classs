@@ -79,3 +79,47 @@
 #     else:
 #         return min_of_rest
 
+# high order functions
+
+# def logger(func):
+
+#     def wapper(*args):
+#         print(f"function{func.__name__} is called with argument {args}")
+#         result = func(*args)
+#         print(f"function{func.__name__} returned {result}")
+#         return result
+#     return wapper
+
+# @logger
+# def reverse_string(sohan):
+#     return sohan[::-1]
+
+
+# print(reverse_string('name'))
+
+x = 1
+y = 2
+def addition(x,y):
+    return x+y
+
+def subraction(x,y):
+    return x-y
+
+def multiplication(x,y):
+    return x*y
+
+def division(x,y):
+    return(x/y)
+
+def logger(func):
+
+    def wapper(*args , **kwargs):
+        print(f"function{func.__name__} is called with argument {args} , {kwargs}")
+        result = func(*args , **kwargs)
+        print(f"function{func.__name__} returned {result}")
+        return result
+    return wapper
+
+@logger
+def calulate(x , y):
+    return (x*y), (x-y) , (x+y) , (x/y)
