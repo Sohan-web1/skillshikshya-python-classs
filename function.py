@@ -97,29 +97,42 @@
 
 # print(reverse_string('name'))
 
-x = 1
-y = 2
-def addition(x,y):
-    return x+y
+# x = 1
+# y = 2
+# def addition(x,y):
+#     return x+y
 
-def subraction(x,y):
-    return x-y
+# def subraction(x,y):
+#     return x-y
 
-def multiplication(x,y):
-    return x*y
+# def multiplication(x,y):
+#     return x*y
 
-def division(x,y):
-    return(x/y)
+# def division(x,y):
+#     return(x/y)
 
-def logger(func):
+# def logger(func):
 
-    def wapper(*args , **kwargs):
-        print(f"function{func.__name__} is called with argument {args} , {kwargs}")
-        result = func(*args , **kwargs)
-        print(f"function{func.__name__} returned {result}")
-        return result
-    return wapper
+#     def wapper(*args , **kwargs):
+#         print(f"function{func.__name__} is called with argument {args} , {kwargs}")
+#         result = func(*args , **kwargs)
+#         print(f"function{func.__name__} returned {result}")
+#         return result
+#     return wapper
 
-@logger
-def calulate(x , y):
-    return (x*y), (x-y) , (x+y) , (x/y)
+# @logger
+# def calulate(x , y):
+#     return (x*y), (x-y) , (x+y) , (x/y)
+
+
+# lambda function
+#  simple lambda function
+lambda x, y: x + y
+
+# assigning lambda function to a variable
+add = lambda x, y: x+y
+
+# using the lambda function
+result = add(5, 3)
+print(result)
+
